@@ -115,8 +115,8 @@ sam deploy --guided
 - Open a terminal on your computer at the directory where you want to save the source code
 - Copy the below command
 ```
-git clone https://github.com/PhamTHHanh/fcj-serverless-frontend.git
-cd fcj-serverless-frontend
+git clone https://github.com/AWS-First-Cloud-Journey/FCJ-Serverless-Workshop.git
+cd FCJ-Serverless-Workshop
 yarn build
 ```
 12. We have finished building the front-end. Next, execute the following command to upload the **build** folder to S3

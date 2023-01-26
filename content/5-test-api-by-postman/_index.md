@@ -28,12 +28,12 @@ In this step, we will test operation of the APIs using [Postman](https://www.pos
 {
     "id": "5",
     "rv_id": 0,
-    "name": "Learning DevOps",
-    "author": "Mikeal Krief",
-    "price": "14.95",
+    "name": "Amazon Web Services in Action 2nd Edition",
+    "author": "Andreas Wittig",
+    "price": "59.99",
     "category": "IT",
-    "description": "The complete guide to accelerate collaboration with Jenkins, Kubernetes, Terraform and Azure DevOps",
-    "image": "https://book-image-resize-store.s3.ap-southeast-1.amazonaws.com/LearningDevOps.jpeg"
+    "description": "Amazon Web Services in Action, Second Edition is a comprehensive introduction to computing, storing, and networking in the AWS cloud. You'll find clear, relevant coverage of all the essential AWS services you to know, emphasizing best practices for security, high availability and scalability.",
+    "image": "https://book-image-resize-store.s3.ap-southeast-2.amazonaws.com/aws.jpg"
 }
 ```
 
@@ -77,7 +77,7 @@ Since the delete Lambda function on execution deletes images uploaded by the use
 
 5. Tải ảnh sau về máy của bạn và chọn nó để tải lên bucket
 
-{{%attachments title="Image" pattern=".*\.(jpeg)$"/%}}
+{{%attachments title="Image" pattern=".*\.(jpg)$"/%}}
 6. Click **Upload**
 ![TestListAPI](/images/5-test-api-by-postman/5-test-api-by-postman-11.png?featherlight=false&width=90pc)
 
@@ -100,6 +100,6 @@ Since the delete Lambda function on execution deletes images uploaded by the use
 
 ![TestListAPI](/images/5-test-api-by-postman/5-test-api-by-postman-6.png?featherlight=false&width=90pc)
 
-11. Open **book-image-resize-store** bucket to check object. The **LearningDevOps.jpeg** is deleted
+11. Open **book-image-resize-store** bucket to check object. The **aws.jpg** is deleted
 
 ![TestListAPI](/images/5-test-api-by-postman/5-test-api-by-postman-15.png?featherlight=false&width=90pc)

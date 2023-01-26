@@ -28,12 +28,12 @@ Trong bước này, chúng ta sẽ kiểm tra hoạt động của các API bằ
 {
     "id": "5",
     "rv_id": 0,
-    "name": "Learning DevOps",
-    "author": "Mikeal Krief",
-    "price": "14.95",
+    "name": "Amazon Web Services in Action 2nd Edition",
+    "author": "Andreas Wittig",
+    "price": "59.99",
     "category": "IT",
-    "description": "The complete guide to accelerate collaboration with Jenkins, Kubernetes, Terraform and Azure DevOps",
-    "image": "https://book-image-resize-store.s3.ap-southeast-1.amazonaws.com/LearningDevOps.jpeg"
+    "description": "Amazon Web Services in Action, Second Edition is a comprehensive introduction to computing, storing, and networking in the AWS cloud. You'll find clear, relevant coverage of all the essential AWS services you to know, emphasizing best practices for security, high availability and scalability.",
+    "image": "https://book-image-resize-store.s3.ap-southeast-2.amazonaws.com/aws.jpg"
 }
 ```
 
@@ -75,7 +75,7 @@ Vì Lambda function xoá khi thực hiện sẽ xoá ảnh được tải lên b
 
 5. Tải ảnh sau về máy của bạn và chọn nó để tải lên bucket
 
-{{%attachments title="Image" pattern=".*\.(jpeg)$"/%}}
+{{%attachments title="Image" pattern=".*\.(jpg)$"/%}}
 6. Ấn nút **Upload**
 
 ![TestDeleteAPI](/images/5-test-api-by-postman/5-test-api-by-postman-11.png?featherlight=false&width=90pc)
@@ -99,7 +99,7 @@ Vì Lambda function xoá khi thực hiện sẽ xoá ảnh được tải lên b
 
 ![TestDeleteAPI](/images/5-test-api-by-postman/5-test-api-by-postman-6.png?featherlight=false&width=90pc)
 
-11. Mở bucket **book-image-resize-store** kiểm tra kết quả. Ảnh **LearningDevOps.jpeg** đã xoá.
+11. Mở bucket **book-image-resize-store** kiểm tra kết quả. Ảnh **aws.jpg** đã xoá.
 
 ![TestDeleteAPI](/images/5-test-api-by-postman/5-test-api-by-postman-15.png?featherlight=false&width=90pc)
 

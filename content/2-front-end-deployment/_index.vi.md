@@ -115,8 +115,8 @@ sam deploy --guided
 - Mở terminal trên máy bạn tại thư mục bạn muốn lưu source code
 - Sao chép câu lệnh dưới đây
 ```
-git clone https://github.com/PhamTHHanh/fcj-serverless-frontend.git
-cd fcj-serverless-frontend
+git clone https://github.com/AWS-First-Cloud-Journey/FCJ-Serverless-Workshop.git
+cd FCJ-Serverless-Workshop
 yarn build
 ```
 12. Chúng ta đã build xong front-end. Tiếp theo thực hiện câu lệnh sau để tải thư mục **build** lên S3
