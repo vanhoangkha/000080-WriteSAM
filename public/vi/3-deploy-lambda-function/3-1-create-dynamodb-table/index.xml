@@ -4,6 +4,10 @@
     <title>Tạo bảng trong DynamoDB on AWS System Manager</title>
     <link>/vi/3-deploy-lambda-function/3-1-create-dynamodb-table/</link>
     <description>Recent content in Tạo bảng trong DynamoDB on AWS System Manager</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/vi/3-deploy-lambda-function/3-1-create-dynamodb-table/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="/vi/3-deploy-lambda-function/3-1-create-dynamodb-table/index.xml" rel="self" type="application/rss+xml" />
+    
+    
   </channel>
 </rss>

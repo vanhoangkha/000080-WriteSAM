@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
   <url>
     <loc>/3-deploy-lambda-function/3-1-create-dynamodb-table/</loc>
     <xhtml:link
@@ -13,7 +14,9 @@
                 hreflang="en"
                 href="/3-deploy-lambda-function/3-1-create-dynamodb-table/"
                 />
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/4-config-api-gw/4-1-get-api/</loc>
     <xhtml:link
                 rel="alternate"
@@ -25,7 +28,9 @@
                 hreflang="en"
                 href="/4-config-api-gw/4-1-get-api/"
                 />
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/1-preparation/</loc>
     <xhtml:link
                 rel="alternate"
@@ -37,7 +42,9 @@
                 hreflang="en"
                 href="/1-preparation/"
                 />
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/</loc>
     <xhtml:link
                 rel="alternate"
@@ -49,7 +56,9 @@
                 hreflang="en"
                 href="/"
                 />
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-2-write-data-function/</loc>
     <xhtml:link
                 rel="alternate"
@@ -61,7 +70,9 @@
                 hreflang="en"
                 href="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-2-write-data-function/"
                 />
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/4-config-api-gw/4-2-post-api/</loc>
     <xhtml:link
                 rel="alternate"
@@ -73,7 +84,9 @@
                 hreflang="en"
                 href="/4-config-api-gw/4-2-post-api/"
                 />
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/2-front-end-deployment/</loc>
     <xhtml:link
                 rel="alternate"
@@ -85,7 +98,9 @@
                 hreflang="en"
                 href="/2-front-end-deployment/"
                 />
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/3-deploy-lambda-function/3-2-deploy-lambda-function/</loc>
     <xhtml:link
                 rel="alternate"
@@ -97,7 +112,9 @@
                 hreflang="en"
                 href="/3-deploy-lambda-function/3-2-deploy-lambda-function/"
                 />
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-1-list-data-function/</loc>
     <xhtml:link
                 rel="alternate"
@@ -109,7 +126,9 @@
                 hreflang="en"
                 href="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-1-list-data-function/"
                 />
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/4-config-api-gw/4-3-delete-api/</loc>
     <xhtml:link
                 rel="alternate"
@@ -121,7 +140,9 @@
                 hreflang="en"
                 href="/4-config-api-gw/4-3-delete-api/"
                 />
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-3-delete-data-function/</loc>
     <xhtml:link
                 rel="alternate"
@@ -133,7 +154,9 @@
                 hreflang="en"
                 href="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-3-delete-data-function/"
                 />
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/3-deploy-lambda-function/</loc>
     <xhtml:link
                 rel="alternate"
@@ -145,7 +168,9 @@
                 hreflang="en"
                 href="/3-deploy-lambda-function/"
                 />
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/4-config-api-gw/</loc>
     <xhtml:link
                 rel="alternate"
@@ -157,7 +182,9 @@
                 hreflang="en"
                 href="/4-config-api-gw/"
                 />
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-4-resize-image-function/</loc>
     <xhtml:link
                 rel="alternate"
@@ -169,7 +196,9 @@
                 hreflang="en"
                 href="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-4-resize-image-function/"
                 />
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/5-test-api-by-postman/</loc>
     <xhtml:link
                 rel="alternate"
@@ -181,7 +210,9 @@
                 hreflang="en"
                 href="/5-test-api-by-postman/"
                 />
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/6-test-front-end/</loc>
     <xhtml:link
                 rel="alternate"
@@ -193,7 +224,9 @@
                 hreflang="en"
                 href="/6-test-front-end/"
                 />
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/7-cleanup/</loc>
     <xhtml:link
                 rel="alternate"
@@ -205,7 +238,9 @@
                 hreflang="en"
                 href="/7-cleanup/"
                 />
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -217,7 +252,9 @@
                 hreflang="en"
                 href="/categories/"
                 />
-  </url><url>
+  </url>
+  
+  <url>
     <loc>/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -230,4 +267,5 @@
                 href="/tags/"
                 />
   </url>
+  
 </urlset>
