@@ -48,12 +48,12 @@ Vậy API đọc dữ liệu đã hoạt động đúng.
 ![WebApp](/images/6-test-front-end/6-test-front-end-6.png?featherlight=false&width=90pc)
 
 - Ấn sang tab **Create new book** ghi dữ liệu mới vào cơ sở dữ liệu
-- Nhập id bằng 5
-- Nhập tên: **Amazon Web Services in Action**
-- Nhập tác giả: **Andreas Wittig**
-- Nhập thể loại: **IT**
-- Nhập giá: **59.99**
-- Nhập mô tả: **Amazon Web Services in Action, Second Edition is a comprehensive introduction to computing, storing, and networking in the AWS cloud. You'll find clear, relevant coverage of all the essential AWS services you to know, emphasizing best practices for security, high availability and scalability.**
+- Nhập id bằng `5`
+- Nhập tên: `Amazon Web Services in Action`
+- Nhập tác giả: `Andreas Wittig`
+- Nhập thể loại: `IT`
+- Nhập giá: `59.99`
+- Nhập mô tả: `Amazon Web Services in Action, Second Edition is a comprehensive introduction to computing, storing, and networking in the AWS cloud. You'll find clear, relevant coverage of all the essential AWS services you to know, emphasizing best practices for security, high availability and scalability.`
 
 {{%attachments title="Image" pattern=".*\.(jpg)$"/%}}
 
@@ -70,7 +70,7 @@ Vậy API đọc dữ liệu đã hoạt động đúng.
 
 ![WebApp](/images/6-test-front-end/6-test-front-end-9.png?featherlight=false&width=90pc)
 
-1. Kiểm tra API xoá  
+6. Kiểm tra API xoá  
 - Ấn sang tab **Management**
 - Ấn nút **Update**
 

@@ -68,6 +68,10 @@ We will create a Lambda function that deletes all items with the specified parti
                 - /*
 ```
 
+{{% notice warning %}}
+If you create S3 bucket names that are different from the ones in the lab, please check **Policies | Resources** of services and update.
+{{% /notice %}}
+
 ![LambdaDeleteFunction](/images/3-deploy-lambda-function/3-2-deploy-lambda-function-12.png?featherlight=false&width=90pc)
 ![LambdaDeleteFunction](/images/3-deploy-lambda-function/3-2-deploy-lambda-function-12-1.png?featherlight=false&width=90pc)
 
@@ -151,7 +155,7 @@ def lambda_handler(event, context):
 4. Run the following command to deploy SAM
 ```
 sam build
-sam deploy --guided
+sam deploy
 ```
 5. Back to Lambda console
 - Click **book_delete** function created

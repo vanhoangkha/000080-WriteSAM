@@ -60,7 +60,7 @@ pre : " <b> 4.1. </b> "
 2. Run the following command to deploy SAM
 ```
 sam build
-sam deploy --guided
+sam deploy
 ```
 {{% notice note %}}
 Enter "y" if asked "BooksList may not have authorization defined, Is this okay? [y/N]: "

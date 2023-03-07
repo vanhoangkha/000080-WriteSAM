@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.101.0" />
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Writing Lambda function :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1676520864" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1676520864" rel="stylesheet">
-    <link href="/css/hybrid.css?1676520864" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1676520864" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1676520864" rel="stylesheet">
-    <link href="/css/auto-complete.css?1676520864" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1676520864" rel="stylesheet">
-    <link href="/css/theme.css?1676520864" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1676520864" rel="stylesheet">
+    <link href="/css/nucleus.css?1678178618" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1678178618" rel="stylesheet">
+    <link href="/css/hybrid.css?1678178618" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1678178618" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1678178618" rel="stylesheet">
+    <link href="/css/auto-complete.css?1678178618" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1678178618" rel="stylesheet">
+    <link href="/css/theme.css?1678178618" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1678178618" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1676520864" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1678178618" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1676520864"></script>
+    <script src="/js/jquery-3.3.1.min.js?1678178618"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1676520864"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1676520864"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1678178618"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1678178618"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1676520864"></script>
+<script type="text/javascript" src="/js/search.js?1678178618"></script>
 
     
   </div>
@@ -224,13 +224,13 @@
  
   
     
-    <li data-nav-id="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-2-write-data-function/" title="Writing Lambda function" class="dd-item 
+    <li data-nav-id="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-1-list-data-function/" title="Listing Lambda function" class="dd-item 
         
-        active
+        
         
         ">
-      <a href="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-2-write-data-function/">
-           <b> 3.2.1 </b> Writing Lambda function
+      <a href="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-1-list-data-function/">
+           <b> 3.2.1 </b> Listing Lambda function
           
             <i class="fas fa-check read-icon"></i>
           
@@ -252,13 +252,13 @@
  
   
     
-    <li data-nav-id="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-1-list-data-function/" title="Listing Lambda function" class="dd-item 
+    <li data-nav-id="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-2-write-data-function/" title="Writing Lambda function" class="dd-item 
         
-        
+        active
         
         ">
-      <a href="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-1-list-data-function/">
-           <b> 3.2.2 </b> Listing Lambda function
+      <a href="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-2-write-data-function/">
+           <b> 3.2.2 </b> Writing Lambda function
           
             <i class="fas fa-check read-icon"></i>
           
@@ -726,12 +726,12 @@
 
 
 
-	<p>Trong bước này chúng ta tạo một Lambda function mới để ghi dữ liệu vào DynamoDB trên SAM</p>
+	<p>In this step we create a new Lambda function to write data to DynamoDB on SAM</p>
 <ol>
 <li>Open <strong>template.yaml</strong> file in <strong>fcj-book-store</strong> folder</li>
 <li>Add the following script at the end of the file to create a Lambda function that writes data to DynamoDB</li>
 </ol>
-<pre><code>  BookCreate:
+<pre tabindex="0"><code>  BookCreate:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: fcj-book-store/book_create
@@ -753,85 +753,88 @@
 </code></pre><ul>
 <li>Add the following script at the end of the file to create an S3 bucket that stores uploaded image files</li>
 </ul>
-<pre><code>  BookImageStore:
+<pre tabindex="0"><code>  BookImageStore:
     Type: AWS::S3::Bucket
     Properties:
       BucketName: book-image-store
 </code></pre><p><img src="/images/3-deploy-lambda-function/3-2-deploy-lambda-function-6.png?featherlight=false&amp;width=90pc" alt="LambdaCreateFunction"></p>
+
+<div class="notices warning" ><p>If you create S3 bucket name is different from the one in the lab, please update <strong>Policies | Resources</strong> of <strong>book_create</strong> function with that name</p>
+</div>
+
 <ol start="3">
 <li>The directory structure is as follows:</li>
 </ol>
-<pre><code>fcj-book-store
+<pre tabindex="0"><code>fcj-book-store
 ├── fcj-book-store
 │   ├── books_list
 │   │   └── books_list.py
 │   ├── book_create
 │       └── book_create.py
 └── template.yaml
-
 </code></pre><ul>
 <li>Create <strong>book_create</strong> folder in <strong>fcj-book-store/fcj-book-store/</strong> folder</li>
 <li>Create <strong>book_create.py</strong> file and copy the below code block to it</li>
 </ul>
-<pre><code>import boto3
+<pre tabindex="0"><code>import boto3
 import json
 import base64
 import io
 import cgi
 import os
 
-s3 = boto3.client('s3')
-client = boto3.resource('dynamodb')
-runtime_region = os.environ['AWS_REGION']
+s3 = boto3.client(&#39;s3&#39;)
+client = boto3.resource(&#39;dynamodb&#39;)
+runtime_region = os.environ[&#39;AWS_REGION&#39;]
 
 def get_data_from_request_body(content_type, body):
     fp = io.BytesIO(base64.b64decode(body)) # decode
-    environ = {&quot;REQUEST_METHOD&quot;: &quot;POST&quot;}
+    environ = {&#34;REQUEST_METHOD&#34;: &#34;POST&#34;}
     headers = {
-        &quot;content-type&quot;: content_type,
-        &quot;content-length&quot;: len(body),
+        &#34;content-type&#34;: content_type,
+        &#34;content-length&#34;: len(body),
     }
 
     fs = cgi.FieldStorage(fp=fp, environ=environ, headers=headers) 
     return [fs, None]
     
 def lambda_handler(event, context):
-    content_type = event['headers'].get('Content-Type', '') or event['headers'].get('content-type', '')
+    content_type = event[&#39;headers&#39;].get(&#39;Content-Type&#39;, &#39;&#39;) or event[&#39;headers&#39;].get(&#39;content-type&#39;, &#39;&#39;)
     
-    if content_type == 'application/json':
-        book_item = json.loads(event[&quot;body&quot;])
+    if content_type == &#39;application/json&#39;:
+        book_item = json.loads(event[&#34;body&#34;])
     else:
         book_data, book_data_error = get_data_from_request_body(
-            content_type=content_type, body=event[&quot;body&quot;]
+            content_type=content_type, body=event[&#34;body&#34;]
         )
     
-        name = book_data['image'].filename
-        image = book_data['image'].value
-        s3.put_object(Bucket='book-image-store', Key=name, Body=image)
-        image_path = &quot;https://{}.s3.{}.amazonaws.com/{}&quot;.format(&quot;book-image-resize-store&quot;, runtime_region, name)
+        name = book_data[&#39;image&#39;].filename
+        image = book_data[&#39;image&#39;].value
+        s3.put_object(Bucket=&#39;book-image-store&#39;, Key=name, Body=image)
+        image_path = &#34;https://{}.s3.{}.amazonaws.com/{}&#34;.format(&#34;book-image-resize-store&#34;, runtime_region, name)
         
         book_item = {
-            &quot;id&quot;: book_data['id'].value,
-            &quot;rv_id&quot;: 0,
-            &quot;name&quot;: book_data['name'].value,
-            &quot;author&quot;: book_data['author'].value,
-            &quot;price&quot; : book_data['price'].value,
-            &quot;category&quot;: book_data['category'].value,
-            &quot;description&quot;: book_data['description'].value,
-            &quot;image&quot;: image_path
+            &#34;id&#34;: book_data[&#39;id&#39;].value,
+            &#34;rv_id&#34;: 0,
+            &#34;name&#34;: book_data[&#39;name&#39;].value,
+            &#34;author&#34;: book_data[&#39;author&#39;].value,
+            &#34;price&#34; : book_data[&#39;price&#39;].value,
+            &#34;category&#34;: book_data[&#39;category&#39;].value,
+            &#34;description&#34;: book_data[&#39;description&#39;].value,
+            &#34;image&#34;: image_path
         }
     
-    table = client.Table('Books')
+    table = client.Table(&#39;Books&#39;)
     table.put_item(Item = book_item)
     
     response = {
-        'statusCode': 200,
-        'body': 'successfully created item!',
-        'headers': {
-            'Content-Type': 'application/json',
-            &quot;Access-Control-Allow-Headers&quot;: &quot;Access-Control-Allow-Headers, Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method,X-Access-Token, XKey, Authorization&quot;,
-            &quot;Access-Control-Allow-Origin&quot;: &quot;*&quot;,
-            &quot;Access-Control-Allow-Methods&quot;: &quot;GET,PUT,POST,DELETE,OPTIONS&quot;
+        &#39;statusCode&#39;: 200,
+        &#39;body&#39;: &#39;successfully created item!&#39;,
+        &#39;headers&#39;: {
+            &#39;Content-Type&#39;: &#39;application/json&#39;,
+            &#34;Access-Control-Allow-Headers&#34;: &#34;Access-Control-Allow-Headers, Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method,X-Access-Token, XKey, Authorization&#34;,
+            &#34;Access-Control-Allow-Origin&#34;: &#34;*&#34;,
+            &#34;Access-Control-Allow-Methods&#34;: &#34;GET,PUT,POST,DELETE,OPTIONS&#34;
         },
     }
   
@@ -839,8 +842,8 @@ def lambda_handler(event, context):
 </code></pre><ol start="4">
 <li>Run the following command to deploy SAM</li>
 </ol>
-<pre><code>sam build
-sam deploy --guided
+<pre tabindex="0"><code>sam build
+sam deploy
 </code></pre><p><img src="/images/3-deploy-lambda-function/3-2-deploy-lambda-function-7.png?featherlight=false&amp;width=90pc" alt="LambdaCreateFunction"></p>
 <ol start="5">
 <li>Back to AWS Lambda console</li>
@@ -991,6 +994,25 @@ sam deploy --guided
             
                 
                     
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -1010,22 +1032,6 @@ sam deploy --guided
                     
                         
                         
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1183,10 +1189,10 @@ sam deploy --guided
 	 
 	 
 		
-			<a class="nav nav-prev" href="/3-deploy-lambda-function/3-2-deploy-lambda-function/" title="Deploy Lambda function"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-1-list-data-function/" title="Listing Lambda function"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-1-list-data-function/" title="Listing Lambda function" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-3-delete-data-function/" title="Deleting Lambda function" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1196,19 +1202,19 @@ sam deploy --guided
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1676520865"></script>
-    <script src="/js/perfect-scrollbar.min.js?1676520865"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1676520865"></script>
-    <script src="/js/jquery.sticky.js?1676520865"></script>
-    <script src="/js/featherlight.min.js?1676520865"></script>
-    <script src="/js/highlight.pack.js?1676520865"></script>
+    <script src="/js/clipboard.min.js?1678178618"></script>
+    <script src="/js/perfect-scrollbar.min.js?1678178618"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1678178618"></script>
+    <script src="/js/jquery.sticky.js?1678178618"></script>
+    <script src="/js/featherlight.min.js?1678178618"></script>
+    <script src="/js/highlight.pack.js?1678178618"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1676520865"></script>
-    <script src="/js/learn.js?1676520865"></script>
-    <script src="/js/hugo-learn.js?1676520865"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1678178618"></script>
+    <script src="/js/learn.js?1678178618"></script>
+    <script src="/js/hugo-learn.js?1678178618"></script>
 
-    <link href="/mermaid/mermaid.css?1676520865" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1676520865"></script>
+    <link href="/mermaid/mermaid.css?1678178618" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1678178618"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -39,6 +39,10 @@ Trong bước này chúng ta tạo một Lambda function mới để ghi dữ li
 ```
 ![LambdaCreateFunction](/images/3-deploy-lambda-function/3-2-deploy-lambda-function-6.png?featherlight=false&width=90pc)
 
+{{% notice warning %}}
+Nếu bạn tạo các bộ chứa S3 có tên khác với tên trong bài lab, vui lòng cập nhật **Policies | Resource** của function **book_create** với tên đó
+{{% /notice %}}
+
 3. Cấu trúc thư mục như sau:
 ```
 fcj-book-store
@@ -121,7 +125,7 @@ def lambda_handler(event, context):
 4. Chạy dòng lệnh dưới đây triển khai SAM
 ```
 sam build
-sam deploy --guided
+sam deploy
 ```
 
 ![LambdaCreateFunction](/images/3-deploy-lambda-function/3-2-deploy-lambda-function-7.png?featherlight=false&width=90pc)

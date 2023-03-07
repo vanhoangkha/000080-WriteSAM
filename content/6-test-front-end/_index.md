@@ -48,12 +48,12 @@ So the listing API is working properly
 ![WebApp](/images/6-test-front-end/6-test-front-end-6.png?featherlight=false&width=90pc)
 
 - Click on the **Create new book** tab to write new data to the database
-- Enter id with 5
-- Enter name: **Amazon Web Services in Action**
-- Enter the author: **Andreas Wittig**
-- Enter category: **IT**
-- Enter price: **59.99**
-- Enter a description: **Amazon Web Services in Action, Second Edition is a comprehensive introduction to computing, storing, and networking in the AWS cloud. You'll find clear, relevant coverage of all the essential AWS services you to know, emphasizing best practices for security, high availability, and scalability.**
+- Enter id with `5`
+- Enter name: `Amazon Web Services in Action`
+- Enter the author: `Andreas Wittig`
+- Enter category: `IT`
+- Enter price: `59.99`
+- Enter a description: `Amazon Web Services in Action, Second Edition is a comprehensive introduction to computing, storing, and networking in the AWS cloud. You'll find clear, relevant coverage of all the essential AWS services you to know, emphasizing best practices for security, high availability, and scalability.`
 
 {{%attachments title="Image" pattern=".*\.(jpg)$"/%}}
 
@@ -70,7 +70,7 @@ So the listing API is working properly
 
 ![WebApp](/images/6-test-front-end/6-test-front-end-9.png?featherlight=false&width=90pc)
 
-1. Test the deleting API
+6. Test the deleting API
 - Click **Management** tab
 - Click **Update**
 

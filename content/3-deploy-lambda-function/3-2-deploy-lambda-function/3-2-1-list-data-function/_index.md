@@ -1,9 +1,9 @@
 ---
 title : "Listing Lambda function"
 date :  "`r Sys.Date()`" 
-weight : 2
+weight : 1
 chapter : false
-pre : " <b> 3.2.2 </b> "
+pre : " <b> 3.2.1 </b> "
 ---
 We will create a Lambda function that reads all the data in the DynamoDB table:
 1. Open **template.yaml** file in **fcj-book-store** folder
@@ -104,7 +104,7 @@ def lambda_handler(event, context):
 4. Run the following command to deploy SAM
 ```
 sam build
-sam deploy --guided
+sam deploy
 ```
 5. Open [AWS Lambda console](https://ap-southeast-1.console.aws.amazon.com/lambda/home?region=ap-southeast-1#/functions)
 

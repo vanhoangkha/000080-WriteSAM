@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.101.0" />
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Kiểm tra API với front-end :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1676520865" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1676520865" rel="stylesheet">
-    <link href="/css/hybrid.css?1676520865" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1676520865" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1676520865" rel="stylesheet">
-    <link href="/css/auto-complete.css?1676520865" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1676520865" rel="stylesheet">
-    <link href="/css/theme.css?1676520865" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1676520865" rel="stylesheet">
+    <link href="/css/nucleus.css?1678178618" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1678178618" rel="stylesheet">
+    <link href="/css/hybrid.css?1678178618" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1678178618" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1678178618" rel="stylesheet">
+    <link href="/css/auto-complete.css?1678178618" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1678178618" rel="stylesheet">
+    <link href="/css/theme.css?1678178618" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1678178618" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1676520865" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1678178618" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1676520865"></script>
+    <script src="/js/jquery-3.3.1.min.js?1678178618"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1676520865"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1676520865"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1678178618"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1678178618"></script>
 <script type="text/javascript">
     
         var baseurl = "\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1676520865"></script>
+<script type="text/javascript" src="/js/search.js?1678178618"></script>
 
     
   </div>
@@ -727,7 +727,7 @@
 <li>Mở tệp <strong>App.js</strong> trong thư mục <strong>fcj-serverless-frontend/src/</strong>, sửa giá trị của biến <strong>isAdmin</strong> thành <strong>true</strong></li>
 <li>Chạy các dòng lệnh dưới đây:</li>
 </ol>
-<pre><code>yarn build
+<pre tabindex="0"><code>yarn build
 aws s3 cp build s3://fcj-book-store --recursive
 </code></pre><ol start="4">
 <li>Dán endpoint của S3 static web vào browser của bạn. Ứng dụng đã hiện thông tin sách, nhưng vẫn chưa có ảnh vì chúng ta chưa tải ảnh lên.</li>
@@ -797,12 +797,12 @@ aws s3 cp build s3://fcj-book-store --recursive
 <p><img src="/images/6-test-front-end/6-test-front-end-6.png?featherlight=false&amp;width=90pc" alt="WebApp"></p>
 <ul>
 <li>Ấn sang tab <strong>Create new book</strong> ghi dữ liệu mới vào cơ sở dữ liệu</li>
-<li>Nhập id bằng 5</li>
-<li>Nhập tên: <strong>Amazon Web Services in Action</strong></li>
-<li>Nhập tác giả: <strong>Andreas Wittig</strong></li>
-<li>Nhập thể loại: <strong>IT</strong></li>
-<li>Nhập giá: <strong>59.99</strong></li>
-<li>Nhập mô tả: <strong>Amazon Web Services in Action, Second Edition is a comprehensive introduction to computing, storing, and networking in the AWS cloud. You&rsquo;ll find clear, relevant coverage of all the essential AWS services you to know, emphasizing best practices for security, high availability and scalability.</strong></li>
+<li>Nhập id bằng <code>5</code></li>
+<li>Nhập tên: <code>Amazon Web Services in Action</code></li>
+<li>Nhập tác giả: <code>Andreas Wittig</code></li>
+<li>Nhập thể loại: <code>IT</code></li>
+<li>Nhập giá: <code>59.99</code></li>
+<li>Nhập mô tả: <code>Amazon Web Services in Action, Second Edition is a comprehensive introduction to computing, storing, and networking in the AWS cloud. You'll find clear, relevant coverage of all the essential AWS services you to know, emphasizing best practices for security, high availability and scalability.</code></li>
 </ul>
 
 <section class="attachments ">
@@ -855,7 +855,7 @@ aws s3 cp build s3://fcj-book-store --recursive
 <li>Hiển thị thông tin vừa tạo</li>
 </ul>
 <p><img src="/images/6-test-front-end/6-test-front-end-9.png?featherlight=false&amp;width=90pc" alt="WebApp"></p>
-<ol>
+<ol start="6">
 <li>Kiểm tra API xoá</li>
 </ol>
 <ul>
@@ -1206,19 +1206,19 @@ aws s3 cp build s3://fcj-book-store --recursive
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1676520865"></script>
-    <script src="/js/perfect-scrollbar.min.js?1676520865"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1676520865"></script>
-    <script src="/js/jquery.sticky.js?1676520865"></script>
-    <script src="/js/featherlight.min.js?1676520865"></script>
-    <script src="/js/highlight.pack.js?1676520865"></script>
+    <script src="/js/clipboard.min.js?1678178618"></script>
+    <script src="/js/perfect-scrollbar.min.js?1678178618"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1678178618"></script>
+    <script src="/js/jquery.sticky.js?1678178618"></script>
+    <script src="/js/featherlight.min.js?1678178618"></script>
+    <script src="/js/highlight.pack.js?1678178618"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1676520865"></script>
-    <script src="/js/learn.js?1676520865"></script>
-    <script src="/js/hugo-learn.js?1676520865"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1678178618"></script>
+    <script src="/js/learn.js?1678178618"></script>
+    <script src="/js/hugo-learn.js?1678178618"></script>
 
-    <link href="/mermaid/mermaid.css?1676520865" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1676520865"></script>
+    <link href="/mermaid/mermaid.css?1678178618" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1678178618"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

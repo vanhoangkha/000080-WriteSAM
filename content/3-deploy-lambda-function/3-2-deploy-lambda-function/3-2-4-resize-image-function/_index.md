@@ -43,6 +43,11 @@ ImageResizer:
           HEIGHT: 280
           DES_BUCKET: book-image-resize-store
 ```
+
+{{% notice warning %}}
+If you create S3 bucket names that are different from the ones in the lab, please check **Policies | Resources** or **Environment** of resources and update.
+{{% /notice %}}
+
 - Add the following script at the end of the file to grant permission to the **books-image-store** bucket to use this function
 ```
 LambdaInvokePermission:
@@ -80,7 +85,7 @@ fcj-book-store
 4. Run the following command to deploy SAM
 ```
 sam build
-sam deploy --guided
+sam deploy
 ```
 
 ![LambdaResizeFunction](/images/3-deploy-lambda-function/3-2-deploy-lambda-function-22.png?featherlight=false&width=90pc)

@@ -23,7 +23,7 @@ pre : " <b> 3.1 </b> "
 3. Run the following command to deploy SAM
 ```
 sam build
-sam deploy --guided
+sam deploy
 ```
 
 ![CreateTable](/images/3-deploy-lambda-function/3-1-create-dynamodb-table-2.png?featherlight=false&width=90pc)
@@ -69,7 +69,7 @@ sam deploy --guided
 7. Run the following command to deploy SAM
 ```
 sam build
-sam deploy --guided
+sam deploy
 ```
 
 ![CreateTable](/images/3-deploy-lambda-function/3-1-create-dynamodb-table-5.png?featherlight=false&width=90pc)

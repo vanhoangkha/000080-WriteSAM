@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.101.0" />
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Tạo GET API :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1676520865" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1676520865" rel="stylesheet">
-    <link href="/css/hybrid.css?1676520865" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1676520865" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1676520865" rel="stylesheet">
-    <link href="/css/auto-complete.css?1676520865" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1676520865" rel="stylesheet">
-    <link href="/css/theme.css?1676520865" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1676520865" rel="stylesheet">
+    <link href="/css/nucleus.css?1678178618" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1678178618" rel="stylesheet">
+    <link href="/css/hybrid.css?1678178618" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1678178618" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1678178618" rel="stylesheet">
+    <link href="/css/auto-complete.css?1678178618" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1678178618" rel="stylesheet">
+    <link href="/css/theme.css?1678178618" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1678178618" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1676520865" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1678178618" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1676520865"></script>
+    <script src="/js/jquery-3.3.1.min.js?1678178618"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1676520865"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1676520865"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1678178618"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1678178618"></script>
 <script type="text/javascript">
     
         var baseurl = "\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1676520865"></script>
+<script type="text/javascript" src="/js/search.js?1678178618"></script>
 
     
   </div>
@@ -724,35 +724,35 @@
 <li>Mở tệp <strong>template.yaml</strong> trong thư mục <strong>fcj-book-store</strong></li>
 <li>Thêm đoạn script sau vào cuối tệp tạo một REST API và GET method</li>
 </ol>
-<pre><code>  BookApi:
+<pre tabindex="0"><code>  BookApi:
     Type: AWS::Serverless::Api
     Name: fcj-serverless-api
     Properties:
       StageName: staging
-      Cors: &quot;'*'&quot;      # enable CORS for API
+      Cors: &#34;&#39;*&#39;&#34;      # enable CORS for API
       DefinitionBody:
         openapi: 3.0.1
         info:
-          description: &quot;This is the APIs for book store web app&quot;
-          version: &quot;1.0.0&quot;
-          title: &quot;API Gateway REST API to Lambda&quot;
+          description: &#34;This is the APIs for book store web app&#34;
+          version: &#34;1.0.0&#34;
+          title: &#34;API Gateway REST API to Lambda&#34;
         paths:
           /books:
             get:
               responses:
-                &quot;200&quot;:
+                &#34;200&#34;:
                   description: 200 response
                   headers:
                     Access-Control-Allow-Origin:
                       type: string
               x-amazon-apigateway-integration:
                 uri:
-                  Fn::Sub: &quot;arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${BooksList.Arn}/invocations&quot;
+                  Fn::Sub: &#34;arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${BooksList.Arn}/invocations&#34;
                 responses:
                   default:
                     statusCode: 200
                     responseParameters:
-                      method.response.header.Access-Control-Allow-Origin: &quot;'*'&quot;
+                      method.response.header.Access-Control-Allow-Origin: &#34;&#39;*&#39;&#34;
                 passthroughBehavior: when_no_match
                 httpMethod: POST #always POST
                 type: aws_proxy
@@ -760,7 +760,7 @@
 <ul>
 <li>Thêm đoạn script sau vào cuối của function <strong>BooksList</strong></li>
 </ul>
-<pre><code>      Events:
+<pre tabindex="0"><code>      Events:
         ListBook:
           Type: Api
           Properties:
@@ -772,8 +772,8 @@
 <ol start="2">
 <li>Chạy dòng lệnh dưới đây triển khai SAM</li>
 </ol>
-<pre><code>sam build
-sam deploy --guided
+<pre tabindex="0"><code>sam build
+sam deploy
 </code></pre>
 <div class="notices note" ><p>Nhập &ldquo;y&rdquo; nếu được hỏi &ldquo;BooksList may not have authorization defined, Is this okay? [y/N]: &quot;</p>
 </div>
@@ -1133,19 +1133,19 @@ sam deploy --guided
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1676520865"></script>
-    <script src="/js/perfect-scrollbar.min.js?1676520865"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1676520865"></script>
-    <script src="/js/jquery.sticky.js?1676520865"></script>
-    <script src="/js/featherlight.min.js?1676520865"></script>
-    <script src="/js/highlight.pack.js?1676520865"></script>
+    <script src="/js/clipboard.min.js?1678178618"></script>
+    <script src="/js/perfect-scrollbar.min.js?1678178618"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1678178618"></script>
+    <script src="/js/jquery.sticky.js?1678178618"></script>
+    <script src="/js/featherlight.min.js?1678178618"></script>
+    <script src="/js/highlight.pack.js?1678178618"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1676520865"></script>
-    <script src="/js/learn.js?1676520865"></script>
-    <script src="/js/hugo-learn.js?1676520865"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1678178618"></script>
+    <script src="/js/learn.js?1678178618"></script>
+    <script src="/js/hugo-learn.js?1678178618"></script>
 
-    <link href="/mermaid/mermaid.css?1676520865" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1676520865"></script>
+    <link href="/mermaid/mermaid.css?1678178618" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1678178618"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

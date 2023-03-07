@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.101.0" />
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Preparation :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1676520864" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1676520864" rel="stylesheet">
-    <link href="/css/hybrid.css?1676520864" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1676520864" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1676520864" rel="stylesheet">
-    <link href="/css/auto-complete.css?1676520864" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1676520864" rel="stylesheet">
-    <link href="/css/theme.css?1676520864" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1676520864" rel="stylesheet">
+    <link href="/css/nucleus.css?1678178618" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1678178618" rel="stylesheet">
+    <link href="/css/hybrid.css?1678178618" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1678178618" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1678178618" rel="stylesheet">
+    <link href="/css/auto-complete.css?1678178618" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1678178618" rel="stylesheet">
+    <link href="/css/theme.css?1678178618" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1678178618" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1676520864" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1678178618" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1676520864"></script>
+    <script src="/js/jquery-3.3.1.min.js?1678178618"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1676520864"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1676520864"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1678178618"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1678178618"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1676520864"></script>
+<script type="text/javascript" src="/js/search.js?1678178618"></script>
 
     
   </div>
@@ -224,13 +224,13 @@
  
   
     
-    <li data-nav-id="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-2-write-data-function/" title="Writing Lambda function" class="dd-item 
+    <li data-nav-id="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-1-list-data-function/" title="Listing Lambda function" class="dd-item 
         
         
         
         ">
-      <a href="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-2-write-data-function/">
-           <b> 3.2.1 </b> Writing Lambda function
+      <a href="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-1-list-data-function/">
+           <b> 3.2.1 </b> Listing Lambda function
           
             <i class="fas fa-check read-icon"></i>
           
@@ -252,13 +252,13 @@
  
   
     
-    <li data-nav-id="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-1-list-data-function/" title="Listing Lambda function" class="dd-item 
+    <li data-nav-id="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-2-write-data-function/" title="Writing Lambda function" class="dd-item 
         
         
         
         ">
-      <a href="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-1-list-data-function/">
-           <b> 3.2.2 </b> Listing Lambda function
+      <a href="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-2-write-data-function/">
+           <b> 3.2.2 </b> Writing Lambda function
           
             <i class="fas fa-check read-icon"></i>
           
@@ -721,13 +721,13 @@
 <ul>
 <li>MacOS</li>
 </ul>
-<pre><code>brew tap aws/tap
+<pre tabindex="0"><code>brew tap aws/tap
 brew install aws-sam-cli
 sam --version
 </code></pre><ul>
 <li>Linux</li>
 </ul>
-<pre><code>pip install aws-sam-cli
+<pre tabindex="0"><code>pip install aws-sam-cli
 sam --version
 </code></pre><ul>
 <li>Windows
@@ -737,7 +737,7 @@ sam --version
 </ul>
 </li>
 </ul>
-<pre><code>sam --version
+<pre tabindex="0"><code>sam --version
 </code></pre>
 <div class="notices note" ><p>You can refer to: <a href="https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html">https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html</a></p>
 </div>
@@ -755,7 +755,7 @@ sam --version
 </ul>
 <p><img src="/images/1-preparation/1-preparation-2.png?featherlight=false&amp;width=90pc" alt="IAMConsole"></p>
 <ul>
-<li>Enter user name, ví dụ: <code>AdminSAMUser</code></li>
+<li>Enter user name, such as: <code>AdminSAMUser</code></li>
 <li>Select <strong>Password - AWS Mannagemant Console access</strong> of <strong>Select AWS credentail type</strong> pattern</li>
 <li>Select <strong>Custom password</strong>, then enter your password</li>
 <li>Uncheck the <strong>Require password reset</strong></li>
@@ -763,7 +763,7 @@ sam --version
 </ul>
 <p><img src="/images/1-preparation/1-preparation-3.png?featherlight=false&amp;width=90pc" alt="IAMConsole"></p>
 <ul>
-<li>Select <strong>Attach existin policies directly</strong></li>
+<li>Select <strong>Attach existing policies directly</strong></li>
 <li>Select <strong>AdministratorAccess</strong> policy to the user has full access to the services</li>
 <li>Click <strong>Next: Tags</strong></li>
 </ul>
@@ -789,7 +789,7 @@ sam --version
 <ul>
 <li>Run the command using the terminal on your device</li>
 </ul>
-<pre><code>aws configure
+<pre tabindex="0"><code>aws configure
 </code></pre><ul>
 <li>Enter the information corresponding to the columns in the credential file you downloaded
 <ul>
@@ -806,12 +806,12 @@ sam --version
 <ul>
 <li>Run the below commands at the directory where you want to deploy the application</li>
 </ul>
-<pre><code>#Step 1 - Download a sample application
+<pre tabindex="0"><code>#Step 1 - Download a sample application
 sam init
 </code></pre><ul>
 <li>Then select the options:</li>
 </ul>
-<pre><code>Which template source would you like to use?
+<pre tabindex="0"><code>Which template source would you like to use?
 	1 - AWS Quick Start Templates
 	2 - Custom Template Location
 Choice: 1
@@ -1157,19 +1157,19 @@ Project name [sam-app]:  fcj-book-store
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1676520865"></script>
-    <script src="/js/perfect-scrollbar.min.js?1676520865"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1676520865"></script>
-    <script src="/js/jquery.sticky.js?1676520865"></script>
-    <script src="/js/featherlight.min.js?1676520865"></script>
-    <script src="/js/highlight.pack.js?1676520865"></script>
+    <script src="/js/clipboard.min.js?1678178618"></script>
+    <script src="/js/perfect-scrollbar.min.js?1678178618"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1678178618"></script>
+    <script src="/js/jquery.sticky.js?1678178618"></script>
+    <script src="/js/featherlight.min.js?1678178618"></script>
+    <script src="/js/highlight.pack.js?1678178618"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1676520865"></script>
-    <script src="/js/learn.js?1676520865"></script>
-    <script src="/js/hugo-learn.js?1676520865"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1678178618"></script>
+    <script src="/js/learn.js?1678178618"></script>
+    <script src="/js/hugo-learn.js?1678178618"></script>
 
-    <link href="/mermaid/mermaid.css?1676520865" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1676520865"></script>
+    <link href="/mermaid/mermaid.css?1678178618" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1678178618"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

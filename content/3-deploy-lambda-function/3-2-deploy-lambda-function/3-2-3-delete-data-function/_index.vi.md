@@ -68,6 +68,10 @@ Chúng ta sẽ tạo một Lambda function xoá toàn bộ item có partition ke
                 - /*
 ```
 
+{{% notice warning %}}
+Nếu bạn tạo tên bộ chứa S3 khác với tên trong phòng thí nghiệm, vui lòng kiểm tra **Policies | Resources** của các dịch vụ và cập nhật.
+{{% /notice %}}
+
 ![LambdaDeleteFunction](/images/3-deploy-lambda-function/3-2-deploy-lambda-function-12.png?featherlight=false&width=90pc)
 ![LambdaDeleteFunction](/images/3-deploy-lambda-function/3-2-deploy-lambda-function-12-1.png?featherlight=false&width=90pc)
 
@@ -152,7 +156,7 @@ def lambda_handler(event, context):
 4. Chạy dòng lệnh dưới đây triển khai SAM
 ```
 sam build
-sam deploy --guided
+sam deploy
 ```
 
 ![LambdaDeleteFunction](/images/3-deploy-lambda-function/3-2-deploy-lambda-function-14.png?featherlight=false&width=90pc)

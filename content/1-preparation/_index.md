@@ -39,7 +39,7 @@ You can refer to: https://docs.aws.amazon.com/serverless-application-model/lates
 
 ![IAMConsole](/images/1-preparation/1-preparation-2.png?featherlight=false&width=90pc)
 
-- Enter user name, ví dụ: `AdminSAMUser`
+- Enter user name, such as: `AdminSAMUser`
 - Select **Password - AWS Mannagemant Console access** of **Select AWS credentail type** pattern
 - Select **Custom password**, then enter your password
 - Uncheck the **Require password reset**
@@ -47,7 +47,7 @@ You can refer to: https://docs.aws.amazon.com/serverless-application-model/lates
 
 ![IAMConsole](/images/1-preparation/1-preparation-3.png?featherlight=false&width=90pc)
 
-- Select **Attach existin policies directly**
+- Select **Attach existing policies directly**
 - Select **AdministratorAccess** policy to the user has full access to the services
 - Click **Next: Tags**
 

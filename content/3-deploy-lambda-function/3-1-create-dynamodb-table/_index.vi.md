@@ -23,7 +23,7 @@ pre : " <b> 3.1 </b> "
 3. Chạy dòng lệnh dưới đây triển khai SAM
 ```
 sam build
-sam deploy --guided
+sam deploy
 ```
 
 ![CreateTable](/images/3-deploy-lambda-function/3-1-create-dynamodb-table-2.png?featherlight=false&width=90pc)
@@ -69,7 +69,7 @@ sam deploy --guided
 7. Chạy dòng lệnh dưới đây triển khai SAM
 ```
 sam build
-sam deploy --guided
+sam deploy
 ```
 
 ![CreateTable](/images/3-deploy-lambda-function/3-1-create-dynamodb-table-5.png?featherlight=false&width=90pc)

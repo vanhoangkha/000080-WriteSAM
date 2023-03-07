@@ -47,7 +47,7 @@ Bạn có thể tham khảo tại: https://docs.aws.amazon.com/serverless-applic
 
 ![IAMConsole](/images/1-preparation/1-preparation-3.png?featherlight=false&width=90pc)
 
-- Chọn **Attach existin policies directly**
+- Chọn **Attach existing policies directly**
 - Chọn policy **AdministratorAccess** để người dùng có toàn bộ quyền truy cập vào các service
 - Ấn **Next: Tags**
 

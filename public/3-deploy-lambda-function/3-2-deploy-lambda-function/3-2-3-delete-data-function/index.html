@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.101.0" />
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Deleting Lambda function :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1676520865" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1676520865" rel="stylesheet">
-    <link href="/css/hybrid.css?1676520865" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1676520865" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1676520865" rel="stylesheet">
-    <link href="/css/auto-complete.css?1676520865" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1676520865" rel="stylesheet">
-    <link href="/css/theme.css?1676520865" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1676520865" rel="stylesheet">
+    <link href="/css/nucleus.css?1678178618" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1678178618" rel="stylesheet">
+    <link href="/css/hybrid.css?1678178618" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1678178618" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1678178618" rel="stylesheet">
+    <link href="/css/auto-complete.css?1678178618" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1678178618" rel="stylesheet">
+    <link href="/css/theme.css?1678178618" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1678178618" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1676520865" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1678178618" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1676520865"></script>
+    <script src="/js/jquery-3.3.1.min.js?1678178618"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1676520865"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1676520865"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1678178618"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1678178618"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1676520865"></script>
+<script type="text/javascript" src="/js/search.js?1678178618"></script>
 
     
   </div>
@@ -224,13 +224,13 @@
  
   
     
-    <li data-nav-id="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-2-write-data-function/" title="Writing Lambda function" class="dd-item 
+    <li data-nav-id="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-1-list-data-function/" title="Listing Lambda function" class="dd-item 
         
         
         
         ">
-      <a href="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-2-write-data-function/">
-           <b> 3.2.1 </b> Writing Lambda function
+      <a href="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-1-list-data-function/">
+           <b> 3.2.1 </b> Listing Lambda function
           
             <i class="fas fa-check read-icon"></i>
           
@@ -252,13 +252,13 @@
  
   
     
-    <li data-nav-id="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-1-list-data-function/" title="Listing Lambda function" class="dd-item 
+    <li data-nav-id="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-2-write-data-function/" title="Writing Lambda function" class="dd-item 
         
         
         
         ">
-      <a href="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-1-list-data-function/">
-           <b> 3.2.2 </b> Listing Lambda function
+      <a href="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-2-write-data-function/">
+           <b> 3.2.2 </b> Writing Lambda function
           
             <i class="fas fa-check read-icon"></i>
           
@@ -731,7 +731,7 @@
 <li>Open <strong>template.yaml</strong> file in <strong>fcj-book-store</strong> folder</li>
 <li>Add the following script at the end of the file to create a Lambda function that deletes data of DynamoDB table</li>
 </ol>
-<pre><code>  BookDelete:
+<pre tabindex="0"><code>  BookDelete:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: fcj-book-store/book_delete
@@ -755,7 +755,7 @@
 </code></pre><ul>
 <li>Add the following script at the end of the file to create an S3 bucket that saves the image after resizing with CORS rule and policy settings</li>
 </ul>
-<pre><code>  BookImageResizeStore:
+<pre tabindex="0"><code>  BookImageResizeStore:
     Type: AWS::S3::Bucket
     Properties:
       AccessControl: PublicRead
@@ -763,14 +763,14 @@
       CorsConfiguration:
         CorsRules:
         - AllowedHeaders:
-            - '*'
+            - &#39;*&#39;
           AllowedMethods:
             - GET
             - PUT
             - POST
             - DELETE
           AllowedOrigins:
-            - '*'
+            - &#39;*&#39;
 
   BookImageResizeStorePolicy:
     Type: AWS::S3::BucketPolicy
@@ -780,20 +780,24 @@
         Version: 2012-10-17
         Statement:
           - Action: 
-              - 's3:GetObject'
+              - &#39;s3:GetObject&#39;
             Effect: Allow
-            Principal: '*'
+            Principal: &#39;*&#39;
             Resource: !Join
-              - ''
-              - - 'arn:aws:s3:::'
+              - &#39;&#39;
+              - - &#39;arn:aws:s3:::&#39;
                 - !Ref BookImageResizeStore
                 - /*
-</code></pre><p><img src="/images/3-deploy-lambda-function/3-2-deploy-lambda-function-12.png?featherlight=false&amp;width=90pc" alt="LambdaDeleteFunction">
+</code></pre>
+<div class="notices warning" ><p>If you create S3 bucket names that are different from the ones in the lab, please check <strong>Policies | Resources</strong> of services and update.</p>
+</div>
+
+<p><img src="/images/3-deploy-lambda-function/3-2-deploy-lambda-function-12.png?featherlight=false&amp;width=90pc" alt="LambdaDeleteFunction">
 <img src="/images/3-deploy-lambda-function/3-2-deploy-lambda-function-12-1.png?featherlight=false&amp;width=90pc" alt="LambdaDeleteFunction"></p>
 <ol start="3">
 <li>The directory structure is as follows:</li>
 </ol>
-<pre><code>fcj-book-store
+<pre tabindex="0"><code>fcj-book-store
 ├── fcj-book-store
 │   ├── books_list
 │   │   └── books_list.py
@@ -806,14 +810,14 @@
 <li>Create <strong>book_delete</strong> folder in <strong>fcj-book-store/fcj-book-store/</strong> folder</li>
 <li>Create <strong>book_delete.py</strong> file and copy the below code block to it</li>
 </ul>
-<pre><code>import boto3
+<pre tabindex="0"><code>import boto3
 import json
 
-s3 = boto3.client('s3')
-client = boto3.resource('dynamodb')
+s3 = boto3.client(&#39;s3&#39;)
+client = boto3.resource(&#39;dynamodb&#39;)
 
 def get_image_name(image_path):
-    str_image = image_path.split(&quot;/&quot;)
+    str_image = image_path.split(&#34;/&#34;)
     for image_path_item in str_image:
         image_name = image_path_item
         
@@ -822,55 +826,55 @@ def get_image_name(image_path):
 def lambda_handler(event, context):
     error = None
     status = 200
-    delete_id = event['pathParameters']
-    delete_id['rv_id'] = 0
+    delete_id = event[&#39;pathParameters&#39;]
+    delete_id[&#39;rv_id&#39;] = 0
     
-    table = client.Table(&quot;Books&quot;)
-    image_path = &quot;&quot;
+    table = client.Table(&#34;Books&#34;)
+    image_path = &#34;&#34;
 
     try:
         data = table.get_item(Key = delete_id)
-        image_path = data['Item']['image']
+        image_path = data[&#39;Item&#39;][&#39;image&#39;]
         image_name = get_image_name(image_path)
     except Exception as e:
         error = e
     
     try:
         response = table.query(
-            ProjectionExpression=&quot;rv_id&quot;, 
-            KeyConditionExpression=&quot;id = :id&quot;, 
-            ExpressionAttributeValues={&quot;:id&quot;: delete_id['id']})
+            ProjectionExpression=&#34;rv_id&#34;, 
+            KeyConditionExpression=&#34;id = :id&#34;, 
+            ExpressionAttributeValues={&#34;:id&#34;: delete_id[&#39;id&#39;]})
             
-        for item in response['Items']:
-            delete_id['rv_id'] = item['rv_id']
+        for item in response[&#39;Items&#39;]:
+            delete_id[&#39;rv_id&#39;] = item[&#39;rv_id&#39;]
             print(delete_id)
             table.delete_item(Key = delete_id)
         
         print(image_name)
-        s3.delete_object(Bucket='book-image-resize-store', Key=image_name)
+        s3.delete_object(Bucket=&#39;book-image-resize-store&#39;, Key=image_name)
         
     except Exception as e:
         error = e
     
     if error is None:
-        message = 'successfully deleted item!'
+        message = &#39;successfully deleted item!&#39;
     else:
-        message = 'delete item fail'
+        message = &#39;delete item fail&#39;
         status = 400
 
     return {
-            'statusCode': status,
-            'body': message,
-            'headers': {
-                'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': '*'
+            &#39;statusCode&#39;: status,
+            &#39;body&#39;: message,
+            &#39;headers&#39;: {
+                &#39;Content-Type&#39;: &#39;application/json&#39;,
+                &#39;Access-Control-Allow-Origin&#39;: &#39;*&#39;
             },
         }
 </code></pre><ol start="4">
 <li>Run the following command to deploy SAM</li>
 </ol>
-<pre><code>sam build
-sam deploy --guided
+<pre tabindex="0"><code>sam build
+sam deploy
 </code></pre><ol start="5">
 <li>Back to Lambda console</li>
 </ol>
@@ -1226,7 +1230,7 @@ sam deploy --guided
 	 
 	 
 		
-			<a class="nav nav-prev" href="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-1-list-data-function/" title="Listing Lambda function"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-2-write-data-function/" title="Writing Lambda function"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-4-resize-image-function/" title="Resizing image Lmabda function " style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -1239,19 +1243,19 @@ sam deploy --guided
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1676520865"></script>
-    <script src="/js/perfect-scrollbar.min.js?1676520865"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1676520865"></script>
-    <script src="/js/jquery.sticky.js?1676520865"></script>
-    <script src="/js/featherlight.min.js?1676520865"></script>
-    <script src="/js/highlight.pack.js?1676520865"></script>
+    <script src="/js/clipboard.min.js?1678178618"></script>
+    <script src="/js/perfect-scrollbar.min.js?1678178618"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1678178618"></script>
+    <script src="/js/jquery.sticky.js?1678178618"></script>
+    <script src="/js/featherlight.min.js?1678178618"></script>
+    <script src="/js/highlight.pack.js?1678178618"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1676520865"></script>
-    <script src="/js/learn.js?1676520865"></script>
-    <script src="/js/hugo-learn.js?1676520865"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1678178618"></script>
+    <script src="/js/learn.js?1678178618"></script>
+    <script src="/js/hugo-learn.js?1678178618"></script>
 
-    <link href="/mermaid/mermaid.css?1676520865" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1676520865"></script>
+    <link href="/mermaid/mermaid.css?1678178618" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1678178618"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

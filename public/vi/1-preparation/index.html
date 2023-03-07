@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.101.0" />
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Chuẩn bị :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1676520865" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1676520865" rel="stylesheet">
-    <link href="/css/hybrid.css?1676520865" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1676520865" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1676520865" rel="stylesheet">
-    <link href="/css/auto-complete.css?1676520865" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1676520865" rel="stylesheet">
-    <link href="/css/theme.css?1676520865" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1676520865" rel="stylesheet">
+    <link href="/css/nucleus.css?1678178618" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1678178618" rel="stylesheet">
+    <link href="/css/hybrid.css?1678178618" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1678178618" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1678178618" rel="stylesheet">
+    <link href="/css/auto-complete.css?1678178618" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1678178618" rel="stylesheet">
+    <link href="/css/theme.css?1678178618" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1678178618" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1676520865" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1678178618" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1676520865"></script>
+    <script src="/js/jquery-3.3.1.min.js?1678178618"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1676520865"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1676520865"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1678178618"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1678178618"></script>
 <script type="text/javascript">
     
         var baseurl = "\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1676520865"></script>
+<script type="text/javascript" src="/js/search.js?1678178618"></script>
 
     
   </div>
@@ -721,13 +721,13 @@
 <ul>
 <li>MacOS</li>
 </ul>
-<pre><code>brew tap aws/tap
+<pre tabindex="0"><code>brew tap aws/tap
 brew install aws-sam-cli
 sam --version
 </code></pre><ul>
 <li>Linux</li>
 </ul>
-<pre><code>pip install aws-sam-cli
+<pre tabindex="0"><code>pip install aws-sam-cli
 sam --version
 </code></pre><ul>
 <li>Windows
@@ -737,7 +737,7 @@ sam --version
 </ul>
 </li>
 </ul>
-<pre><code>sam --version
+<pre tabindex="0"><code>sam --version
 </code></pre>
 <div class="notices note" ><p>Bạn có thể tham khảo tại: <a href="https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html">https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html</a></p>
 </div>
@@ -763,7 +763,7 @@ sam --version
 </ul>
 <p><img src="/images/1-preparation/1-preparation-3.png?featherlight=false&amp;width=90pc" alt="IAMConsole"></p>
 <ul>
-<li>Chọn <strong>Attach existin policies directly</strong></li>
+<li>Chọn <strong>Attach existing policies directly</strong></li>
 <li>Chọn policy <strong>AdministratorAccess</strong> để người dùng có toàn bộ quyền truy cập vào các service</li>
 <li>Ấn <strong>Next: Tags</strong></li>
 </ul>
@@ -789,7 +789,7 @@ sam --version
 <ul>
 <li>Chạy câu lệnh bằng terminal trên máy của bạn</li>
 </ul>
-<pre><code>aws configure
+<pre tabindex="0"><code>aws configure
 </code></pre><ul>
 <li>Nhập thông tin tương ứng với các cột trong tệp credential mà bạn tải về
 <ul>
@@ -806,12 +806,12 @@ sam --version
 <ul>
 <li>Chạy các dòng lệnh dưới đây tại thư mục bạn muốn triển khai ứng dụng</li>
 </ul>
-<pre><code>#Step 1 - Download a sample application
+<pre tabindex="0"><code>#Step 1 - Download a sample application
 sam init
 </code></pre><ul>
 <li>Sau đó chọn các tuỳ chọn:</li>
 </ul>
-<pre><code>Which template source would you like to use?
+<pre tabindex="0"><code>Which template source would you like to use?
 	1 - AWS Quick Start Templates
 	2 - Custom Template Location
 Choice: 1
@@ -1157,19 +1157,19 @@ Project name [sam-app]:  fcj-book-store
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1676520865"></script>
-    <script src="/js/perfect-scrollbar.min.js?1676520865"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1676520865"></script>
-    <script src="/js/jquery.sticky.js?1676520865"></script>
-    <script src="/js/featherlight.min.js?1676520865"></script>
-    <script src="/js/highlight.pack.js?1676520865"></script>
+    <script src="/js/clipboard.min.js?1678178618"></script>
+    <script src="/js/perfect-scrollbar.min.js?1678178618"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1678178618"></script>
+    <script src="/js/jquery.sticky.js?1678178618"></script>
+    <script src="/js/featherlight.min.js?1678178618"></script>
+    <script src="/js/highlight.pack.js?1678178618"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1676520865"></script>
-    <script src="/js/learn.js?1676520865"></script>
-    <script src="/js/hugo-learn.js?1676520865"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1678178618"></script>
+    <script src="/js/learn.js?1678178618"></script>
+    <script src="/js/hugo-learn.js?1678178618"></script>
 
-    <link href="/mermaid/mermaid.css?1676520865" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1676520865"></script>
+    <link href="/mermaid/mermaid.css?1678178618" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1678178618"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

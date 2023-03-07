@@ -103,7 +103,7 @@ def lambda_handler(event, context):
 4. Chạy dòng lệnh dưới đây triển khai SAM
 ```
 sam build
-sam deploy --guided
+sam deploy
 ```
 
 5. Mở bảng điều khiển của [AWS Lambda](https://ap-southeast-1.console.aws.amazon.com/lambda/home?region=ap-southeast-1#/functions)

@@ -43,6 +43,11 @@ ImageResizer:
           HEIGHT: 280
           DES_BUCKET: book-image-resize-store
 ```
+
+{{% notice warning %}}
+Nếu bạn tạo tên bộ chứa S3 khác với tên trong phòng thí nghiệm, vui lòng kiểm tra **Chính sách | Tài nguyên** hoặc **Môi trường** của tài nguyên và cập nhật.
+{{% /notice %}}
+
 - Thêm đoạn script sau vào cuối tệp để cấp quyền cho S3 bucket **books-image-store** sử dụng function này
 ```
 LambdaInvokePermission:
@@ -80,7 +85,7 @@ fcj-book-store
 4. Chạy dòng lệnh dưới đây triển khai SAM
 ```
 sam build
-sam deploy --guided
+sam deploy
 ```
 
 ![LambdaResizeFunction](/images/3-deploy-lambda-function/3-2-deploy-lambda-function-22.png?featherlight=false&width=90pc)

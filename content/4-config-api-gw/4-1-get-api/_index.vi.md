@@ -60,7 +60,7 @@ pre : " <b> 4.1. </b> "
 2. Chạy dòng lệnh dưới đây triển khai SAM
 ```
 sam build
-sam deploy --guided
+sam deploy
 ```
 {{% notice note %}}
 Nhập "y" nếu được hỏi "BooksList may not have authorization defined, Is this okay? [y/N]: "

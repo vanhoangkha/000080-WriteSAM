@@ -1,11 +1,11 @@
 ---
 title : "Writing Lambda function"
 date :  "`r Sys.Date()`" 
-weight : 1
+weight : 2
 chapter : false
-pre : " <b> 3.2.1 </b> "
+pre : " <b> 3.2.2 </b> "
 ---
-Trong bước này chúng ta tạo một Lambda function mới để ghi dữ liệu vào DynamoDB trên SAM
+In this step we create a new Lambda function to write data to DynamoDB on SAM
 
 1. Open **template.yaml** file in **fcj-book-store** folder
 2. Add the following script at the end of the file to create a Lambda function that writes data to DynamoDB
@@ -38,6 +38,10 @@ Trong bước này chúng ta tạo một Lambda function mới để ghi dữ li
       BucketName: book-image-store
 ```
 ![LambdaCreateFunction](/images/3-deploy-lambda-function/3-2-deploy-lambda-function-6.png?featherlight=false&width=90pc)
+
+{{% notice warning %}}
+If you create S3 bucket name is different from the one in the lab, please update **Policies | Resources** of **book_create** function with that name
+{{% /notice %}}
 
 3. The directory structure is as follows:
 ```
@@ -121,7 +125,7 @@ def lambda_handler(event, context):
 4. Run the following command to deploy SAM
 ```
 sam build
-sam deploy --guided
+sam deploy
 ```
 
 ![LambdaCreateFunction](/images/3-deploy-lambda-function/3-2-deploy-lambda-function-7.png?featherlight=false&width=90pc)
