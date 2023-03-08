@@ -69,7 +69,7 @@ Chúng ta sẽ tạo một Lambda function xoá toàn bộ item có partition ke
 ```
 
 {{% notice warning %}}
-Nếu bạn tạo tên bộ chứa S3 khác với tên trong phòng thí nghiệm, vui lòng kiểm tra **Policies | Resources** của các dịch vụ và cập nhật.
+Nếu bạn tạo tên của S3 bucket khác với tên trong bài lab, vui lòng kiểm tra **Policies | Resources** của các dịch vụ và cập nhật.
 {{% /notice %}}
 
 ![LambdaDeleteFunction](/images/3-deploy-lambda-function/3-2-deploy-lambda-function-12.png?featherlight=false&width=90pc)

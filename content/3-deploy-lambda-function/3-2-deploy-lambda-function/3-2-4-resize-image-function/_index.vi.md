@@ -45,7 +45,7 @@ ImageResizer:
 ```
 
 {{% notice warning %}}
-Nếu bạn tạo tên bộ chứa S3 khác với tên trong phòng thí nghiệm, vui lòng kiểm tra **Chính sách | Tài nguyên** hoặc **Môi trường** của tài nguyên và cập nhật.
+Nếu bạn tạo tên của S3 bucket khác với tên trong bài lab, vui lòng kiểm tra **Chính sách | Tài nguyên** hoặc **Môi trường** của tài nguyên và cập nhật.
 {{% /notice %}}
 
 - Thêm đoạn script sau vào cuối tệp để cấp quyền cho S3 bucket **books-image-store** sử dụng function này
