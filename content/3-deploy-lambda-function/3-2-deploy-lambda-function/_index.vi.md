@@ -10,3 +10,4 @@ Trong bước này chúng ta sẽ lần lượt tạo các Lambda function để
 1. [Lambda function ghi dữ liệu](3-2-1-write-data-function/)
 2. [Tạo function lấy dữ liệu](3-2-2-list-data-function/)
 3. [Tạo function xoá dữ liệu](3-2-3-delete-data-function/)
+4. [Tạo Lambda function chỉnh ảnh](3-2-4-resize-image-function/)
