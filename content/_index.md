@@ -1,10 +1,10 @@
 ---
-title : "Serverless - SAM-based Application Deployment"
+title : "Serverless - Deploying applications with SAM"
 date :  "`r Sys.Date()`" 
 weight : 1 
 chapter : false
 ---
-# Serverless - SAM-based Application Deployment
+# Serverless - Deploying applications with SAM
 
 #### Overview
 

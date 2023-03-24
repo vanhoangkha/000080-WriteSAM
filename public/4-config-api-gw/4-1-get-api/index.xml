@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Create GET API on AWS System Manager</title>
+    <title>Create GET API on Serverless - Deploying applications with SAM</title>
     <link>/4-config-api-gw/4-1-get-api/</link>
-    <description>Recent content in Create GET API on AWS System Manager</description>
+    <description>Recent content in Create GET API on Serverless - Deploying applications with SAM</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="/4-config-api-gw/4-1-get-api/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

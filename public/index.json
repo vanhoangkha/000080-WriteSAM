@@ -29,10 +29,10 @@
 },
 {
 	"uri": "/",
-	"title": "Serverless - SAM-based Application Deployment",
+	"title": "Serverless - Deploying applications with SAM",
 	"tags": [],
 	"description": "",
-	"content": "Serverless - SAM-based Application Deployment Overview In the first two articles of this series, we know how to build a simple serverless web application using the AWS console. To build the serverless application faster, AWS provides users with the AWS Serverless Application Model (SAM) service, which is an open-source framework for building a serverless applications. It provides shorthand syntax to express functions, APIs, databases, and event source mappings. You define the application you want with just a few lines per resource and model it using YAML. During deployment, SAM transforms and expands the SAM syntax into AWS CloudFormation syntax. Then, CloudFormation provides the resources to the user.\nIn this workshop 3, we will rebuild the web application in workshop 2 with AWS SAM.\nThe architecture of the application we will build:\nContent  Preparation Front-end deployment Deploy Lambda function Config API Gateway Test API by Postman Test API with front-end Cleanup  "
+	"content": "Serverless - Deploying applications with SAM Overview In the first two articles of this series, we know how to build a simple serverless web application using the AWS console. To build the serverless application faster, AWS provides users with the AWS Serverless Application Model (SAM) service, which is an open-source framework for building a serverless applications. It provides shorthand syntax to express functions, APIs, databases, and event source mappings. You define the application you want with just a few lines per resource and model it using YAML. During deployment, SAM transforms and expands the SAM syntax into AWS CloudFormation syntax. Then, CloudFormation provides the resources to the user.\nIn this workshop 3, we will rebuild the web application in workshop 2 with AWS SAM.\nThe architecture of the application we will build:\nContent  Preparation Front-end deployment Deploy Lambda function Config API Gateway Test API by Postman Test API with front-end Cleanup  "
 },
 {
 	"uri": "/4-config-api-gw/4-2-post-api/",
