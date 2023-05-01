@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Lambda function chỉnh ảnh on Serverless - Deploying applications with SAM</title>
+    <title>Lambda function chỉnh ảnh on SERVERLESS - TRIỂN KHAI ỨNG DỤNG TRÊN SAM</title>
     <link>/vi/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-4-resize-image-function/</link>
-    <description>Recent content in Lambda function chỉnh ảnh on Serverless - Deploying applications with SAM</description>
+    <description>Recent content in Lambda function chỉnh ảnh on SERVERLESS - TRIỂN KHAI ỨNG DỤNG TRÊN SAM</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="/vi/3-deploy-lambda-function/3-2-deploy-lambda-function/3-2-4-resize-image-function/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
