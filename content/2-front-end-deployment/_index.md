@@ -17,8 +17,10 @@ In this step, we will create an S3 bucket with Static web hosting enabled and pu
 FcjBookStore:
     Type: AWS::S3::Bucket
     Properties:
-      AccessControl: PublicRead
       BucketName: fcj-book-store
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: 'false'
+        BlockPublicPolicy: 'false'
       WebsiteConfiguration:
         IndexDocument: index.html
 

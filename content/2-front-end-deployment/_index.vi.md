@@ -17,8 +17,10 @@ Bước phần này, chúng ta sẽ tạo một S3 bucket với Static web hosti
 FcjBookStore:
     Type: AWS::S3::Bucket
     Properties:
-      AccessControl: PublicRead
       BucketName: fcj-book-store
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: 'false'
+        BlockPublicPolicy: 'false'
       WebsiteConfiguration:
         IndexDocument: index.html
 
