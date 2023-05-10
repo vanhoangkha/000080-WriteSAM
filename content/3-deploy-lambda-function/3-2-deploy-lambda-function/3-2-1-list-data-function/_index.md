@@ -29,6 +29,10 @@ We will create a Lambda function that reads all the data in the DynamoDB table:
                 - !Sub arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/Books
 ```
 
+{{% notice note %}}
+You should install python3.9 because the above function uses python3.9
+{{% /notice %}}
+
 ![LambdaListFunction](/images/3-deploy-lambda-function/3-2-deploy-lambda-function-1.png?featherlight=false&width=90pc)
 
 3. The directory structure is as follows:

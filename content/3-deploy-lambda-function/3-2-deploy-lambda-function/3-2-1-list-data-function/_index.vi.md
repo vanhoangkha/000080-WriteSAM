@@ -31,6 +31,10 @@ Chúng ta sẽ tạo một Lambda function đọc toàn bộ dữ liệu trong b
 
 ![LambdaListFunction](/images/3-deploy-lambda-function/3-2-deploy-lambda-function-1.png?featherlight=false&width=90pc)
 
+{{% notice note %}}
+Bạn nên cài đặt python3.9 vì hàm của chúng ta sử dụng python3.9
+{{% /notice %}}
+
 3. Cấu trúc thư mục như sau:
 ```
 fcj-book-store
