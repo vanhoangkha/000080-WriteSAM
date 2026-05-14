@@ -1,6 +1,6 @@
 ---
 title : "Kiểm tra API với front-end"
-date :  "`r Sys.Date()`" 
+date: 2024-01-01
 weight : 6
 chapter : false
 pre : " <b> 6. </b> "
