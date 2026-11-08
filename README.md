@@ -25,7 +25,7 @@ In this workshop 3, we will rebuild the web application in workshop 2 with AWS S
    - Create DELETE API
 5. Test APIs by Postman
 6. Test APIs with front-end
-7. Cleanup
+7. Clean up
 
 ## Prerequisites
 
